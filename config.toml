@@ -12,7 +12,6 @@ rv-brand = "ReVanced Extended"
 # you can use rvmm-config-gen to generate a config
 
 [Music-Extended]
-enabled = false
 app-name = "Music"
 build-mode = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
