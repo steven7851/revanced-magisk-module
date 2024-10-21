@@ -1,3 +1,5 @@
+Music-Extended: 7.16.53  
+YouTube-Extended: 19.16.39  
 Music-Extended-dev: 7.16.53  
 YouTube-Extended-dev: 19.16.39  
 
@@ -7,9 +9,11 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach root ReVanc
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
 CLI: inotia00/revanced-cli-4.6.2-all.jar  
-Integrations: inotia00/revanced-integrations-1.15.1-dev.4.apk  
-Patches: inotia00/revanced-patches-4.15.1-dev.4.jar  
-[Changelog](https://github.com/inotia00/revanced-patches/releases/tag/v4.15.1-dev.4)  
+Integrations: inotia00/revanced-integrations-1.15.1.apk  
+Patches: inotia00/revanced-patches-4.15.1.jar  
+[Changelog](https://github.com/inotia00/revanced-patches/releases/tag/v4.15.1)
 
-Skipped:  
-Patches: inotia00/revanced-patches-4.14.2.jar        
+Integrations: inotia00/revanced-integrations-1.15.1.apk  
+Patches: inotia00/revanced-patches-4.15.1.jar  
+Integrations: inotia00/revanced-integrations-1.15.1.apk  
+Patches: inotia00/revanced-patches-4.15.1.jar    
