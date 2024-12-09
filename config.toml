@@ -26,7 +26,6 @@ included-patches = ""
 excluded-patches = "'Custom branding name for YouTube' 'Custom branding icon for YouTube' 'MaterialYou'"
 
 [Music-Extended-dev]
-enabled = false
 patches-version = "dev"
 integrations-version = "dev"
 app-name = "Music-dev"
@@ -38,7 +37,6 @@ included-patches = ""
 excluded-patches = "'Custom branding name for YouTube Music' 'Custom branding icon for YouTube Music'"
 
 [YouTube-Extended-dev]
-enabled = false
 patches-version = "dev"
 integrations-version = "dev"
 app-name = "YouTube-dev"
