@@ -1,3 +1,5 @@
+Music-Extended: 7.16.53  
+Music-Extended-dev: 7.16.53  
 YouTube-Extended: 19.44.39  
 YouTube-Extended-dev: 19.44.39  
 
