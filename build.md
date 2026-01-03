@@ -1,7 +1,7 @@
-Morphe-Music-Extended: 8.37.56  
-Morphe-Music-Extended-dev: 8.37.56  
-Morphe-YouTube-Extended: 20.37.48  
-Morphe-YouTube-Extended-dev: 20.37.48  
+Morphe-Music: 8.37.56  
+Morphe-Music-dev: 8.37.56  
+Morphe-YouTube: 20.37.48  
+Morphe-YouTube-dev: 20.37.48  
 Music-Extended: 8.30.54  
 Music-Extended-dev: 8.30.54  
 YouTube-Extended: 20.05.46  
