@@ -126,11 +126,11 @@ excluded-patches = """\
     'Custom branding icon for YouTube' \
     """
 
-[Morphe-Music-Extended]
+[Morphe-Music]
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
 patches-version = "latest"
-rv-brand = "ReVanced Morphe"
+rv-brand = "Morphe"
 app-name = "Morphe-Music"
 build-mode = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
@@ -142,11 +142,11 @@ excluded-patches = """\
     'Custom branding icon for YouTube Music' \
     """
 
-[Morphe-YouTube-Extended]
+[Morphe-YouTube]
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
 patches-version = "latest"
-rv-brand = "ReVanced Morphe"
+rv-brand = "Morphe"
 app-name = "Morphe-YouTube"
 build-mode = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
@@ -157,11 +157,11 @@ excluded-patches = """\
     'Custom branding icon for YouTube' \
     """
 
-[Morphe-Music-Extended-dev]
+[Morphe-Music-dev]
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
 patches-version = "dev"
-rv-brand = "ReVanced Morphe"
+rv-brand = "Morphe"
 app-name = "Morphe-Music-dev"
 build-mode = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music/"
@@ -173,11 +173,11 @@ excluded-patches = """\
     'Custom branding icon for YouTube Music' \
     """
 
-[Morphe-YouTube-Extended-dev]
+[Morphe-YouTube-dev]
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
 patches-version = "dev"
-rv-brand = "ReVanced Morphe"
+rv-brand = "Morphe"
 app-name = "Morphe-YouTube-dev"
 build-mode = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
