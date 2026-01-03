@@ -38,7 +38,7 @@ toml_get() {
 pr() { echo -e "\033[0;32m[+] ${1}\033[0m"; }
 epr() {
 	echo >&2 -e "\033[0;31m[-] ${1}\033[0m"
-	if [ "${GITHUB_REPOSITORY-}" ]; then echo -e "::error::utils.sh [-] ${1}\n"; fi
+	if [ "${GITHUB_REPOSITORY-}" ]; then echo >&2 -e "::error::utils.sh [-] ${1}\n"; fi
 }
 abort() {
 	epr "ABORT: ${1-}"
@@ -59,7 +59,12 @@ get_rv_prebuilts() {
 			ext="jar"
 			local grab_cl=false
 		elif [ "$tag" = "Patches" ]; then
-			ext="rvp"
+			# Support both .rvp (ReVanced) and .mpp (Morphe) patch files
+			if [[ "$src" == *"MorpheApp"* ]]; then
+				ext="mpp"
+			else
+				ext="rvp"
+			fi
 			local grab_cl=true
 		else abort unreachable; fi
 		local dir=${src%/*}
@@ -105,7 +110,8 @@ get_rv_prebuilts() {
 		fi
 		if [ "$tag" = "Patches" ]; then
 			if [ $grab_cl = true ]; then echo -e "[Changelog](https://github.com/${src}/releases/tag/${tag_name})\n" >>"${cl_dir}/changelog.md"; fi
-			if [ "$REMOVE_RV_INTEGRATIONS_CHECKS" = true ]; then
+			# Skip RV integrations patching for MorpheApp patches (.mpp) as they have different structure
+			if [ "$REMOVE_RV_INTEGRATIONS_CHECKS" = true ] && [[ "$ext" != "mpp" ]]; then
 				if ! (
 					mkdir -p "${file}-zip" || return 1
 					unzip -qo "${file}" -d "${file}-zip" || return 1
@@ -160,10 +166,14 @@ config_update() {
 			else
 				last_patches=$(gh_req "$rv_rel/tags/${ver}" -)
 			fi
-			if ! last_patches=$(jq -e -r '.assets[] | select(.name | endswith("rvp")) | .name' <<<"$last_patches"); then
-				abort oops
-			fi
-			if [ "$last_patches" ]; then
+			# Support both .rvp (ReVanced) and .mpp (Morphe) patch files
+			if ! last_patches=$(jq -e -r '[.assets[] | select(.name | endswith("rvp") or endswith("mpp"))] | first | .name' <<<"$last_patches"); then
+				epr "No .rvp or .mpp patch file found for $PATCHES_SRC - including in build anyway"
+				# If we can't check, assume it needs updating to ensure it gets built
+				sources["$PATCHES_SRC/$PATCHES_VER"]=1
+				prcfg=true
+				upped+=("$table_name")
+			elif [ "$last_patches" ]; then
 				if ! OP=$(grep "^Patches: ${PATCHES_SRC%%/*}/" build.md | grep "$last_patches"); then
 					sources["$PATCHES_SRC/$PATCHES_VER"]=1
 					prcfg=true
@@ -625,7 +635,7 @@ build_rv() {
 		module_prop \
 			"${args[module_prop_name]}" \
 			"${app_name} ${args[rv_brand]}" \
-			"${version} (patches ${rv_patches_ver%%.rvp})" \
+			"${version} (patches ${rv_patches_ver%%.*pp})" \
 			"${app_name} ${args[rv_brand]} Magisk module" \
 			"https://raw.githubusercontent.com/${GITHUB_REPOSITORY-}/update/${upj}" \
 			"$base_template"
@@ -660,7 +670,7 @@ module_prop() {
 name=${2}
 version=v${3}
 versionCode=${NEXT_VER_CODE}
-author=j-hc
+author=Abhishek Babu
 description=${4}" >"${6}/module.prop"
 
 	if [ "$ENABLE_MAGISK_UPDATE" = true ]; then echo "updateJson=${5}" >>"${6}/module.prop"; fi
