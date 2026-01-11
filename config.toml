@@ -129,7 +129,7 @@ excluded-patches = """\
 
 [Morphe-Music]
 patches-source = "MorpheApp/morphe-patches"
-cli-source = "AzyrRuthless/morphe-cli"
+cli-source = "MorpheApp/morphe-cli"
 patches-version = "latest"
 cli-version = "latest"
 rv-brand = "Morphe"
@@ -146,7 +146,7 @@ excluded-patches = """\
 
 [Morphe-YouTube]
 patches-source = "MorpheApp/morphe-patches"
-cli-source = "AzyrRuthless/morphe-cli"
+cli-source = "MorpheApp/morphe-cli"
 patches-version = "latest"
 cli-version = "latest"
 rv-brand = "Morphe"
@@ -162,7 +162,7 @@ excluded-patches = """\
 
 [Morphe-Music-dev]
 patches-source = "MorpheApp/morphe-patches"
-cli-source = "AzyrRuthless/morphe-cli"
+cli-source = "MorpheApp/morphe-cli"
 patches-version = "dev"
 cli-version = "latest"
 rv-brand = "Morphe"
@@ -178,7 +178,7 @@ excluded-patches = """\
 
 [Morphe-YouTube-dev]
 patches-source = "MorpheApp/morphe-patches"
-cli-source = "AzyrRuthless/morphe-cli"
+cli-source = "MorpheApp/morphe-cli"
 patches-version = "dev"
 cli-version = "latest"
 rv-brand = "Morphe"
