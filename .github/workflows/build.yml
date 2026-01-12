@@ -25,6 +25,9 @@ jobs:
           fetch-depth: 0
           submodules: true
 
+      - name: Install dependencies
+        run: sudo apt-get update && sudo apt-get install -y zipalign
+
       - name: Update config
         if: ${{ inputs.from_ci }}
         run: |
@@ -66,7 +69,7 @@ jobs:
           body: ${{ steps.get_output.outputs.BUILD_LOG }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ./build/*
-          release_name: ReVanced
+          release_name: Morphe
           tag: ${{ steps.next_ver_code.outputs.NEXT_VER_CODE }}
           file_glob: true
           overwrite: true
@@ -114,7 +117,7 @@ jobs:
         run: |
           cd build || { echo "build folder not found"; exit 1; }
 
-          TG_CHAT="@rvc_magisk"
+          TG_CHAT="@mrph_magisk"
           NL=$'\n'
           APKS=""
           MODULES=""

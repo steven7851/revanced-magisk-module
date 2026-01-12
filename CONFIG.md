@@ -1,6 +1,6 @@
 # Config
 
-Adding another revanced app is as easy as this:
+Adding another morphe app is as easy as this:
 ```toml
 [Some-App]
 apkmirror-dlurl = "https://www.apkmirror.com/apk/inc/app"
@@ -18,13 +18,13 @@ There exists an example below with all defaults shown and all the keys explicitl
 ```toml
 parallel-jobs = 1                    # amount of cores to use for parallel patching, if not set $(nproc) is used
 compression-level = 9                # module zip compression level
-remove-rv-integrations-checks = true # remove checks from the revanced integrations
+remove-rv-integrations-checks = true # remove checks from the morphe integrations
 dpi = "nodpi anydpi 120-640dpi"      # dpi packages to be searched in order. default: "nodpi anydpi"
 
-patches-source = "revanced/revanced-patches" # where to fetch patches bundle from. default: "revanced/revanced-patches"
-cli-source = "j-hc/revanced-cli"             # where to fetch cli from. default: "j-hc/revanced-cli"
+patches-source = "morpheapp/morphe-patches" # where to fetch patches bundle from. default: "morpheapp/morphe-patches"
+cli-source = "AzyrRuthless/morphe-cli"             # where to fetch cli from. default: "AzyrRuthless/morphe-cli"
 # options like cli-source can also set per app
-rv-brand = "ReVanced Extended" # rebrand from 'ReVanced' to something different. default: "ReVanced"
+rv-brand = "ReVanced Extended" # rebrand from 'Morphe' to something different. default: "Morphe"
 
 patches-version = "v2.160.0" # 'latest', 'dev', or a version number. default: "latest"
 cli-version = "v5.0.0"       # 'latest', 'dev', or a version number. default: "latest"
@@ -59,6 +59,6 @@ uptodown-dlurl = "https://spotify.en.uptodown.com/android"
 module-prop-name = "some-app-magisk"                       # magisk module prop name.
 dpi = "360-480dpi"                               # used to select apk variant from apkmirror. default: nodpi
 arch = "arm64-v8a"                                         # 'arm64-v8a', 'arm-v7a', 'all', 'both'. 'both' downloads both arm64-v8a and arm-v7a. default: all
-riplib = true                                              # enables ripping x86 and x86_64 libs from apks with j-hc revanced cli. default: true
+riplib = true                                              # enables ripping x86 and x86_64 libs from apks with morphe cli. default: true
 
 ```
