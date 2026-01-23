@@ -4,6 +4,7 @@ compression-level = 9
 riplib = true
 
 [Music-Extended]
+enabled = false
 patches-source = "inotia00/revanced-patches"
 cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
@@ -20,6 +21,7 @@ excluded-patches = """\
     """
 
 [YouTube-Extended]
+enabled = false
 patches-source = "inotia00/revanced-patches"
 cli-source = "inotia00/revanced-cli"
 patches-version = "latest"
@@ -35,6 +37,7 @@ excluded-patches = """\
     """
 
 [Music-Extended-dev]
+enabled = false
 patches-source = "inotia00/revanced-patches"
 cli-source = "inotia00/revanced-cli"
 patches-version = "dev"
@@ -51,6 +54,7 @@ excluded-patches = """\
     """
 
 [YouTube-Extended-dev]
+enabled = false
 patches-source = "inotia00/revanced-patches"
 cli-source = "inotia00/revanced-cli"
 patches-version = "dev"
@@ -66,6 +70,7 @@ excluded-patches = """\
     """
 
 [anddea-Music-Extended]
+enabled = false
 patches-source = "anddea/revanced-patches"
 cli-source = "inotia00/revanced-cli"
 patches-version = "latest"
@@ -82,6 +87,7 @@ excluded-patches = """\
     """
 
 [anddea-YouTube-Extended]
+enabled = false
 patches-source = "anddea/revanced-patches"
 cli-source = "inotia00/revanced-cli"
 patches-version = "latest"
@@ -97,6 +103,7 @@ excluded-patches = """\
     """
 
 [anddea-Music-Extended-dev]
+enabled = false
 patches-source = "anddea/revanced-patches"
 cli-source = "inotia00/revanced-cli"
 patches-version = "dev"
@@ -113,6 +120,7 @@ excluded-patches = """\
     """
 
 [anddea-YouTube-Extended-dev]
+enabled = false
 patches-source = "anddea/revanced-patches"
 cli-source = "inotia00/revanced-cli"
 patches-version = "dev"
