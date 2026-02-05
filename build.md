@@ -1,4 +1,3 @@
-Morphe-YouTube: 20.40.45  
 Morphe-YouTube-dev: 20.40.45  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
@@ -7,12 +6,10 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach root ReVanc
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
 CLI: MorpheApp/morphe-cli-1.3.0-all.jar  
-Patches: MorpheApp/patches-1.10.0.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.10.0)
+Patches: MorpheApp/patches-1.11.0-dev.14.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.11.0-dev.14)
 
-CLI: MorpheApp/morphe-cli-1.3.0-all.jar  
-Patches: MorpheApp/patches-1.11.0-dev.13.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.11.0-dev.13)
-
-CLI: MorpheApp/morphe-cli-1.3.0-all.jar  
 CLI: MorpheApp/morphe-cli-1.3.0-all.jar    
+
+Skipped:  
+Patches: MorpheApp/patches-1.10.0.mpp    
