@@ -1,3 +1,5 @@
+Morphe-Music: 8.41.52  
+Morphe-Music-dev: 8.41.52  
 Morphe-YouTube: 20.40.45  
 Morphe-YouTube-dev: 20.40.45  
 
