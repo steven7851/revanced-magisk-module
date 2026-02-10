@@ -94,7 +94,7 @@ get_prebuilts() {
 			if [ "$(jq 'length' <<<"$matches")" -ne 1 ]; then
 				epr "More than 1 asset was found for this cli release. Fallbacking to the first one found..."
 			fi
-			asset=$(jq -r ".[0]" <<<"$matches")
+			asset=$(jq -r ".[1]" <<<"$matches")
 			url=$(jq -r .url <<<"$asset")
 			name=$(jq -r .name <<<"$asset")
 			file="${dir}/${name}"
