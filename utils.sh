@@ -678,14 +678,14 @@ build_rv() {
 		# 	patcher_args+=("-d \"${spoof_video_patch}\"")
 		# fi
 		if [ "${args[riplib]}" = true ]; then
-			patcher_args+=("--rip-lib x86_64 --rip-lib x86 --striplibs arm64-v8a")
+			patcher_args+=("--striplibs arm64-v8a")
 			if [ "$build_mode" = module ]; then
-				patcher_args+=("--rip-lib arm64-v8a --rip-lib armeabi-v7a --unsigned")
+				# patcher_args+=("--rip-lib arm64-v8a --rip-lib armeabi-v7a --unsigned")
 			else
 				if [ "$arch" = "arm64-v8a" ]; then
-					patcher_args+=("--rip-lib armeabi-v7a")
+					# patcher_args+=("--rip-lib armeabi-v7a")
 				elif [ "$arch" = "arm-v7a" ]; then
-					patcher_args+=("--rip-lib arm64-v8a")
+					# patcher_args+=("--rip-lib arm64-v8a")
 				fi
 			fi
 		fi
