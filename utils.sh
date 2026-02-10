@@ -679,15 +679,6 @@ build_rv() {
 		# fi
 		if [ "${args[riplib]}" = true ]; then
 			patcher_args+=("--striplibs arm64-v8a")
-			if [ "$build_mode" = module ]; then
-				# patcher_args+=("--rip-lib arm64-v8a --rip-lib armeabi-v7a --unsigned")
-			else
-				if [ "$arch" = "arm64-v8a" ]; then
-					# patcher_args+=("--rip-lib armeabi-v7a")
-				elif [ "$arch" = "arm-v7a" ]; then
-					# patcher_args+=("--rip-lib arm64-v8a")
-				fi
-			fi
 		fi
 		if [ "${NORB:-}" != true ] || [ ! -f "$patched_apk" ]; then
 			if ! patch_apk "$stock_apk" "$patched_apk" "${patcher_args[*]}" "${args[cli]}" "${args[ptjar]}"; then
