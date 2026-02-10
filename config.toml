@@ -171,7 +171,7 @@ excluded-patches = """\
 [Morphe-Music-dev]
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
-patches-version = "v1.13.0-dev.10"
+patches-version = """'v1.13.0-dev.10'"""
 app-name = "Music"
 cli-version = "dev"
 rv-brand = "Morphe-dev"
@@ -188,7 +188,7 @@ excluded-patches = """\
 [Morphe-YouTube-dev]
 patches-source = "MorpheApp/morphe-patches"
 cli-source = "MorpheApp/morphe-cli"
-patches-version = "v1.13.0-dev.10"
+patches-version = """'v1.13.0-dev.10'"""
 app-name = "YouTube"
 cli-version = "dev"
 rv-brand = "Morphe-dev"
