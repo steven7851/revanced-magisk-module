@@ -96,9 +96,11 @@ get_prebuilts() {
 			tag_name=$(jq -r '.tag_name' <<<"$resp")
 			matches=$(jq -e ".assets | map(select(.name | endswith(\"$ext\")))" <<<"$resp")
 			if [ "$(jq 'length' <<<"$matches")" -ne 1 ]; then
-				wpr "More than 1 asset was found for this cli release. Falling back to the first one found..."
+				asset=$(jq -r ".[1]" <<<"$matches")
+				wpr "More than 1 asset was found for this cli release. Falling back to the second one found..."
+			else
+				asset=$(jq -r ".[0]" <<<"$matches")
 			fi
-			asset=$(jq -r ".[0]" <<<"$matches")
 			url=$(jq -r .url <<<"$asset")
 			name=$(jq -r .name <<<"$asset")
 			file="${dir}/${name}"
