@@ -17,9 +17,4 @@ Patches: MorpheApp/patches-1.14.0-dev.6.mpp
 [Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.14.0-dev.6)
 
 CLI: MorpheApp/morphe-cli-1.4.0-dev.5-all.jar  
-Patches: MorpheApp/patches-1.13.0.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.13.0)
-
-CLI: MorpheApp/morphe-cli-1.4.0-dev.5-all.jar  
-Patches: MorpheApp/patches-1.14.0-dev.6.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.14.0-dev.6)  
+CLI: MorpheApp/morphe-cli-1.4.0-dev.5-all.jar    
