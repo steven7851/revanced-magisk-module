@@ -88,41 +88,17 @@ get_prebuilts() {
 		local url file tag_name name
 		file=$(find "$dir" -name "*${fprefix}-${name_ver#v}.*" -type f 2>/dev/null)
 		if [ -z "$file" ]; then
-			local resp asset
+			local resp asset matches
 			resp=$(gh_req "$rv_rel" -) || return 1
 			tag_name=$(jq -r '.tag_name' <<<"$resp")
-
-			if [ "$tag" = "CLI" ]; then
-				asset=$(jq -r '
-					[.assets[]
-						| select(.name | endswith(".jar"))
-						| select(.name | endswith(".asc") | not)
-						| select(.name | test("dev") | not)
-					] | sort_by(.name) | last // empty' <<<"$resp")
-				if [ -z "$asset" ] || [ "$asset" = "null" ]; then
-					asset=$(jq -r '
-						[.assets[]
-							| select(.name | endswith(".jar"))
-							| select(.name | endswith(".asc") | not)
-						] | sort_by(.name) | last // empty' <<<"$resp")
-				fi
+			matches=$(jq -e '.assets | map(select(.name | endswith("asc") | not))' <<<"$resp")
+			if [ "$(jq 'length' <<<"$matches")" -eq 0 ]; then
+				abort "No asset was found"
+			elif [ "$(jq 'length' <<<"$matches")" -ne 1 ] && [ "$tag" = "CLI" ] && [ "$cli_ver" = "dev" ]; then
+				asset=$(jq -r ".[1]" <<<"$matches")
 			else
-				local matches
-				matches=$(jq -e '.assets | map(select(.name | endswith("asc") | not))' <<<"$resp")
-				if [ "$(jq 'length' <<<"$matches")" -eq 0 ]; then
-					wpr "No asset found for ${tag} from ${src}"
-					return 1
-				elif [ "$(jq 'length' <<<"$matches")" -ne 1 ]; then
-					wpr "More than 1 asset was found for this release. Falling back to the first one found..."
-				fi
-				asset=$(jq -r '.[0]' <<<"$matches")
+				asset=$(jq -r ".[0]" <<<"$matches")
 			fi
-
-			if [ -z "$asset" ] || [ "$asset" = "null" ]; then
-				wpr "No suitable asset found for ${tag} from ${src}"
-				return 1
-			fi
-
 			url=$(jq -r .url <<<"$asset")
 			name=$(jq -r .name <<<"$asset")
 			file="${dir}/${name}"
