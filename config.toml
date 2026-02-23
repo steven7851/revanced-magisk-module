@@ -16,9 +16,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 arch = "arm64-v8a"
-patcher-args = """\
-    --striplibs arm64-v8a \
-    """
+patcher-args = ""
 included-patches = ""
 excluded-patches = """\
     'Custom branding name for YouTube Music' \
@@ -59,9 +57,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 arch = "arm64-v8a"
-patcher-args = """\
-    --striplibs arm64-v8a \
-    """
+patcher-args = ""
 included-patches = ""
 excluded-patches = """\
     'Custom branding name for YouTube Music' \
@@ -101,9 +97,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 arch = "arm64-v8a"
-patcher-args = """\
-    --striplibs arm64-v8a \
-    """
+patcher-args = ""
 included-patches = ""
 excluded-patches = """\
     'Custom branding' \
@@ -140,9 +134,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 arch = "arm64-v8a"
-patcher-args = """\
-    --striplibs arm64-v8a \
-    """
+patcher-args = ""
 included-patches = ""
 excluded-patches = """\
     'Custom branding' \
