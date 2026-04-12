@@ -33,7 +33,7 @@ build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-direct-dlurl = "https://github.com/steven7851/revanced-magisk-module/releases/download/1/com.google.android.youtube-20.45.36-all.apk"
+direct-dlurl = "https://github.com/steven7851/revanced-magisk-module/releases/download/1/com.google.android.youtube-20.45.36-all.apkm"
 arch = "all"
 patcher-args = """\
     --striplibs arm64-v8a \
@@ -73,7 +73,7 @@ build-mode = "apk"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-direct-dlurl = "https://github.com/steven7851/revanced-magisk-module/releases/download/1/com.google.android.youtube-20.45.36-all.apk"
+direct-dlurl = "https://github.com/steven7851/revanced-magisk-module/releases/download/1/com.google.android.youtube-20.45.36-all.apkm"
 arch = "all"
 patcher-args = """\
     --striplibs arm64-v8a \
