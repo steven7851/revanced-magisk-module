@@ -730,8 +730,7 @@ build_rv() {
 			fi
 		fi
 
-		local apk_output="${BUILD_DIR}/${app_name_l}-${rv_brand_f}-v${version_f}-${arch_f}.apk"
-		if [ "${NORB:-}" = false ] || { [ ! -f "$patched_apk" ] && [ ! -f "$apk_output" ]; }; then
+		if [ "${NORB:-}" != true ] || [ ! -f "$patched_apk" ]; then
 			if ! patch_apk "$stock_apk_to_patch" "$patched_apk" "${patcher_args[*]}" "${args[cli]}" "${args[ptjar]}"; then
 				epr "Building '${table}' failed!"
 				return 0
@@ -739,9 +738,8 @@ build_rv() {
 		fi
 		rm "$stock_apk_to_patch"
 		if [ "$build_mode" = apk ]; then
-			if [ "${NORB:-}" = false ] || { [ ! -f "$patched_apk" ] && [ ! -f "$apk_output" ]; }; then
-				mv -f "$patched_apk" "$apk_output"
-			fi
+			local apk_output="${BUILD_DIR}/${app_name_l}-${rv_brand_f}-v${version_f}-${arch_f}.apk"
+			mv -f "$patched_apk" "$apk_output"
 			pr "Built ${table} (non-root): '${apk_output}'"
 			continue
 		fi
