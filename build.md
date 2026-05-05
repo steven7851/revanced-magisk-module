@@ -12,5 +12,5 @@ CLI: MorpheApp/morphe-cli-1.8.0-all.jar
 Patches: MorpheApp/patches-1.25.0.mpp  
 [Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.25.0)
 
-Patches: MorpheApp/patches-1.26.0-dev.3.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.26.0-dev.3)  
+Patches: MorpheApp/patches-1.26.0-dev.4.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.26.0-dev.4)  
