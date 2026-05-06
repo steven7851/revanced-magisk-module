@@ -1,4 +1,3 @@
-Instagram-Piko: 423.0.0.47.66  
 Instagram-Piko-dev: 426.0.0.37.68  
 
 Install [Microg](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
@@ -7,12 +6,10 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
 CLI: MorpheApp/morphe-cli-1.8.0-all.jar  
-Patches: crimera/patches-3.2.0.mpp  
-[Changelog](https://github.com/crimera/piko/releases/tag/v3.2.0)
-
-Patches: crimera/patches-3.3.0-dev.4.mpp  
-[Changelog](https://github.com/crimera/piko/releases/tag/v3.3.0-dev.4)  
+Patches: crimera/patches-3.3.0-dev.5.mpp  
+[Changelog](https://github.com/crimera/piko/releases/tag/v3.3.0-dev.5)  
 
 Skipped:  
+Patches: crimera/patches-3.2.0.mpp  
 Patches: MorpheApp/patches-1.26.0.mpp  
 Patches: MorpheApp/patches-1.26.0.mpp    
