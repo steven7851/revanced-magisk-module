@@ -126,6 +126,7 @@ excluded-patches = """\
     """
 
 [Instagram-Piko]
+enabled = false
 app-name = "Instagram"
 patches-source = "crimera/piko"
 cli-source = "MorpheApp/morphe-cli"
@@ -142,6 +143,7 @@ included-patches = ""
 excluded-patches = ""
 
 [Instagram-Piko-dev]
+enabled = false
 app-name = "Instagram"
 patches-source = "crimera/piko"
 cli-source = "MorpheApp/morphe-cli"
