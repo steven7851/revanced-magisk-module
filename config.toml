@@ -6,7 +6,7 @@ remove-rv-integrations-checks = false
 [Music-Morphe]
 app-name = "Music"
 patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
+cli-source = "MorpheApp/morphe-desktop"
 patches-version = "latest"
 cli-version = "latest"
 rv-brand = "Morphe"
@@ -25,7 +25,7 @@ excluded-patches = """\
 [YouTube-Morphe]
 app-name = "YouTube"
 patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
+cli-source = "MorpheApp/morphe-desktop"
 patches-version = "latest"
 cli-version = "latest"
 rv-brand = "Morphe"
@@ -46,7 +46,7 @@ excluded-patches = """\
 [Music-Morphe-dev]
 app-name = "Music"
 patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
+cli-source = "MorpheApp/morphe-desktop"
 patches-version = "dev"
 cli-version = "latest"
 rv-brand = "Morphe-dev"
@@ -65,7 +65,7 @@ excluded-patches = """\
 [YouTube-Morphe-dev]
 app-name = "YouTube"
 patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
+cli-source = "MorpheApp/morphe-desktop"
 patches-version = "dev"
 cli-version = "latest"
 rv-brand = "Morphe-dev"
@@ -86,7 +86,7 @@ excluded-patches = """\
 [Music-Morphe-dev-exp]
 app-name = "Music"
 patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
+cli-source = "MorpheApp/morphe-desktop"
 patches-version = "dev"
 cli-version = "latest"
 rv-brand = "Morphe-dev"
@@ -106,7 +106,7 @@ excluded-patches = """\
 [YouTube-Morphe-dev-exp]
 app-name = "YouTube"
 patches-source = "MorpheApp/morphe-patches"
-cli-source = "MorpheApp/morphe-cli"
+cli-source = "MorpheApp/morphe-desktop"
 patches-version = "dev"
 cli-version = "latest"
 rv-brand = "Morphe-dev"
