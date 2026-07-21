@@ -111,11 +111,11 @@ patches-version = "dev"
 cli-version = "latest"
 rv-brand = "Morphe-dev"
 build-mode = "apk"
-version = "21.28.204"
+version = "21.29.363"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-direct-dlurl = "https://github.com/steven7851/revanced-magisk-module/releases/download/1/com.google.android.youtube-21.28.204-all.apk"
+direct-dlurl = "https://github.com/steven7851/revanced-magisk-module/releases/download/1/com.google.android.youtube-21.29.363-all.apkm"
 arch = "all"
 patcher-args = """\
     --striplibs arm64-v8a \
