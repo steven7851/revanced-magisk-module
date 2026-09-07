@@ -8,22 +8,15 @@ Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) to detach YouTube and
 
 [revanced-magisk-module](https://github.com/j-hc/revanced-magisk-module)
   
-Patches: MorpheApp/morphe-patches/patches-1.42.0-dev.6.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.42.0-dev.6)
+Patches: MorpheApp/morphe-patches/patches-1.42.0-dev.7.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.42.0-dev.7)
 
 CLI: MorpheApp/morphe-desktop/morphe-desktop-1.15.0-all.jar  
-Patches: MorpheApp/morphe-patches/patches-1.42.0-dev.6.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.42.0-dev.6)
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.42.0-dev.7)
 
-CLI: MorpheApp/morphe-desktop/morphe-desktop-1.15.0-all.jar  
-Patches: MorpheApp/morphe-patches/patches-1.42.0-dev.6.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.42.0-dev.6)
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.42.0-dev.7)
 
-CLI: MorpheApp/morphe-desktop/morphe-desktop-1.15.0-all.jar  
-Patches: MorpheApp/morphe-patches/patches-1.42.0-dev.6.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.42.0-dev.6)
-
-CLI: MorpheApp/morphe-desktop/morphe-desktop-1.15.0-all.jar    
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v1.42.0-dev.7)  
 
 Skipped:  
-Patches: MorpheApp/morphe-patches/patches-1.41.0.mpp      
+Patches: MorpheApp/morphe-patches/patches-1.41.0.mpp        
