@@ -14,5 +14,5 @@ Patches: MorpheApp/morphe-patches/patches-2.2.0.mpp
 [Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.2.0)
 
 CLI: MorpheApp/morphe-desktop/morphe-desktop-2.1.1-all.jar  
-Patches: MorpheApp/morphe-patches/patches-2.3.0-dev.4.mpp  
-[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.4)  
+Patches: MorpheApp/morphe-patches/patches-2.3.0-dev.5.mpp  
+[Changelog](https://github.com/MorpheApp/morphe-patches/releases/tag/v2.3.0-dev.5)  
